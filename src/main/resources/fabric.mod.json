@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "integritychecker",
+  "version": "${version}",
+  "name": "IntegrityChecker",
+  "description": "",
+  "authors": [
+    "alex_s168"
+  ],
+  "contact": {
+    "repo": "https://github.com/alex/IntegrityChecker-client"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/integritychecker-client/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.alex_s168.integritycheckerclient.client.IntegrityCheckerClient"
+    ],
+    "main": [
+      "me.alex_s168.integritycheckerclient.IntegrityChecker"
+    ]
+  },
+  "mixins": [
+    "integritychecker-client.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
